@@ -6,29 +6,20 @@
 #
 ########################################
 
-
 ########################################
 #
 #
-# lets create vars first
+# lets create my local vars first
 #
 #
 ########################################
 
-variable "hub_vm_admin_user" {
-  type = string
-}
-
-
-variable "hub_vm_admin_password" {
-  type = string
-}
+# nothing
 
 ########################################
 #
 #
 # finally the terraform part where stuff happens
-#
 #
 #
 ########################################

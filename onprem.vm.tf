@@ -9,22 +9,7 @@
 ########################################
 
 
-########################################
-#
-#
-# lets create my vars first
-#
-#
-########################################
 
-variable "onprem_vm_admin_user" {
-  type = string
-}
-
-
-variable "onprem_vm_admin_password" {
-  type = string
-}
 
 ########################################
 #
