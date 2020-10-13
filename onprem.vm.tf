@@ -75,8 +75,8 @@ resource "azurerm_virtual_machine" "onprem_vm_1" {
   }
   os_profile {
     computer_name  = "onprem-vm-1"
-    admin_username = var.onprem_vm_admin_user
-    admin_password = var.onprem_vm_admin_password
+    admin_username = var.vm_admin_user
+    admin_password = var.vm_admin_password
   }
   os_profile_linux_config {
     disable_password_authentication = false

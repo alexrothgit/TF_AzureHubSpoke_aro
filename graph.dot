@@ -1,0 +1,125 @@
+digraph {
+        compound = "true"
+        newrank = "true"
+        subgraph "root" {
+                "[root] azurerm_network_interface.hub_vm_nic_1 (expand)" [label = "azurerm_network_interface.hub_vm_nic_1", shape = "box"]
+                "[root] azurerm_network_interface.onprem_vm_nic_1 (expand)" [label = "azurerm_network_interface.onprem_vm_nic_1", shape = "box"]
+                "[root] azurerm_network_interface.spoke_1_vm_nic_1 (expand)" [label = "azurerm_network_interface.spoke_1_vm_nic_1", shape = "box"]
+                "[root] azurerm_network_interface.spoke_2_vm_1_nic_1 (expand)" [label = "azurerm_network_interface.spoke_2_vm_1_nic_1", shape = "box"]
+                "[root] azurerm_network_interface.spoke_2_vm_2_nic_1 (expand)" [label = "azurerm_network_interface.spoke_2_vm_2_nic_1", shape = "box"]
+                "[root] azurerm_network_security_group.onprem_nsg_1 (expand)" [label = "azurerm_network_security_group.onprem_nsg_1", shape = "box"]
+                "[root] azurerm_public_ip.hub_pub_ip_1 (expand)" [label = "azurerm_public_ip.hub_pub_ip_1", shape = "box"]
+                "[root] azurerm_public_ip.hub_vpngw_pub_ip_1 (expand)" [label = "azurerm_public_ip.hub_vpngw_pub_ip_1", shape = "box"]
+                "[root] azurerm_public_ip.onprem_pub_ip_1 (expand)" [label = "azurerm_public_ip.onprem_pub_ip_1", shape = "box"]
+                "[root] azurerm_public_ip.onprem_vpngw_pub_ip_1 (expand)" [label = "azurerm_public_ip.onprem_vpngw_pub_ip_1", shape = "box"]
+                "[root] azurerm_public_ip.spoke_1_pub_ip_1 (expand)" [label = "azurerm_public_ip.spoke_1_pub_ip_1", shape = "box"]
+                "[root] azurerm_public_ip.spoke_2_vm_1_pub_ip_1 (expand)" [label = "azurerm_public_ip.spoke_2_vm_1_pub_ip_1", shape = "box"]
+                "[root] azurerm_public_ip.spoke_2_vm_2_pub_ip_1 (expand)" [label = "azurerm_public_ip.spoke_2_vm_2_pub_ip_1", shape = "box"]
+                "[root] azurerm_resource_group.hub_rg_1 (expand)" [label = "azurerm_resource_group.hub_rg_1", shape = "box"]
+                "[root] azurerm_resource_group.onprem_rg_1 (expand)" [label = "azurerm_resource_group.onprem_rg_1", shape = "box"]
+                "[root] azurerm_resource_group.spoke_1_rg_1 (expand)" [label = "azurerm_resource_group.spoke_1_rg_1", shape = "box"]
+                "[root] azurerm_resource_group.spoke_2_rg_1 (expand)" [label = "azurerm_resource_group.spoke_2_rg_1", shape = "box"]
+                "[root] azurerm_subnet.hub_subnet_1 (expand)" [label = "azurerm_subnet.hub_subnet_1", shape = "box"]
+                "[root] azurerm_subnet.hub_vpngw_subnet_1 (expand)" [label = "azurerm_subnet.hub_vpngw_subnet_1", shape = "box"]
+                "[root] azurerm_subnet.onprem_subnet_1 (expand)" [label = "azurerm_subnet.onprem_subnet_1", shape = "box"]
+                "[root] azurerm_subnet.onprem_vpngw_subnet_1 (expand)" [label = "azurerm_subnet.onprem_vpngw_subnet_1", shape = "box"]
+                "[root] azurerm_subnet.spoke_1_subnet_1 (expand)" [label = "azurerm_subnet.spoke_1_subnet_1", shape = "box"]
+                "[root] azurerm_subnet.spoke_2_subnet_1 (expand)" [label = "azurerm_subnet.spoke_2_subnet_1", shape = "box"]
+                "[root] azurerm_subnet.spoke_2_subnet_2 (expand)" [label = "azurerm_subnet.spoke_2_subnet_2", shape = "box"]
+                "[root] azurerm_virtual_machine.hub_vm_1 (expand)" [label = "azurerm_virtual_machine.hub_vm_1", shape = "box"]
+                "[root] azurerm_virtual_machine.onprem_vm_1 (expand)" [label = "azurerm_virtual_machine.onprem_vm_1", shape = "box"]
+                "[root] azurerm_virtual_machine.spoke_1_vm_1 (expand)" [label = "azurerm_virtual_machine.spoke_1_vm_1", shape = "box"]
+                "[root] azurerm_virtual_machine.spoke_2_vm_1 (expand)" [label = "azurerm_virtual_machine.spoke_2_vm_1", shape = "box"]
+                "[root] azurerm_virtual_machine.spoke_2_vm_2 (expand)" [label = "azurerm_virtual_machine.spoke_2_vm_2", shape = "box"]
+                "[root] azurerm_virtual_machine_extension.spoke_2_vm_2_extension (expand)" [label = "azurerm_virtual_machine_extension.spoke_2_vm_2_extension", shape = "box"]
+                "[root] azurerm_virtual_network.hub_virt_nw_1 (expand)" [label = "azurerm_virtual_network.hub_virt_nw_1", shape = "box"]
+                "[root] azurerm_virtual_network.onprem_virt_nw_1 (expand)" [label = "azurerm_virtual_network.onprem_virt_nw_1", shape = "box"]
+                "[root] azurerm_virtual_network.spoke_1_virt_nw_1 (expand)" [label = "azurerm_virtual_network.spoke_1_virt_nw_1", shape = "box"]
+                "[root] azurerm_virtual_network.spoke_2_virt_nw_1 (expand)" [label = "azurerm_virtual_network.spoke_2_virt_nw_1", shape = "box"]
+                "[root] azurerm_virtual_network_gateway.hub_vpn_gw (expand)" [label = "azurerm_virtual_network_gateway.hub_vpn_gw", shape = "box"]
+                "[root] azurerm_virtual_network_gateway.onprem_vpn_gw (expand)" [label = "azurerm_virtual_network_gateway.onprem_vpn_gw", shape = "box"]
+                "[root] azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection (expand)" [label = "azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection", shape = "box"]
+                "[root] azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection (expand)" [label = "azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection", shape = "box"]
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]" [label = "provider[\"registry.terraform.io/hashicorp/azurerm\"]", shape = "diamond"]
+                "[root] var.vm_admin_password" [label = "var.vm_admin_password", shape = "note"]
+                "[root] var.vm_admin_user" [label = "var.vm_admin_user", shape = "note"]
+                "[root] var.vpn_shared_key" [label = "var.vpn_shared_key", shape = "note"]
+                "[root] azurerm_network_interface.hub_vm_nic_1 (expand)" -> "[root] azurerm_public_ip.hub_pub_ip_1 (expand)"
+                "[root] azurerm_network_interface.hub_vm_nic_1 (expand)" -> "[root] azurerm_subnet.hub_subnet_1 (expand)"
+                "[root] azurerm_network_interface.onprem_vm_nic_1 (expand)" -> "[root] azurerm_public_ip.onprem_pub_ip_1 (expand)"
+                "[root] azurerm_network_interface.onprem_vm_nic_1 (expand)" -> "[root] azurerm_subnet.onprem_subnet_1 (expand)"
+                "[root] azurerm_network_interface.spoke_1_vm_nic_1 (expand)" -> "[root] azurerm_public_ip.spoke_1_pub_ip_1 (expand)"
+                "[root] azurerm_network_interface.spoke_1_vm_nic_1 (expand)" -> "[root] azurerm_subnet.spoke_1_subnet_1 (expand)"
+                "[root] azurerm_network_interface.spoke_2_vm_1_nic_1 (expand)" -> "[root] azurerm_public_ip.spoke_2_vm_1_pub_ip_1 (expand)"
+                "[root] azurerm_network_interface.spoke_2_vm_1_nic_1 (expand)" -> "[root] azurerm_subnet.spoke_2_subnet_1 (expand)"
+                "[root] azurerm_network_interface.spoke_2_vm_2_nic_1 (expand)" -> "[root] azurerm_public_ip.spoke_2_vm_2_pub_ip_1 (expand)"
+                "[root] azurerm_network_interface.spoke_2_vm_2_nic_1 (expand)" -> "[root] azurerm_subnet.spoke_2_subnet_2 (expand)"
+                "[root] azurerm_network_security_group.onprem_nsg_1 (expand)" -> "[root] azurerm_resource_group.onprem_rg_1 (expand)"
+                "[root] azurerm_public_ip.hub_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.hub_rg_1 (expand)"
+                "[root] azurerm_public_ip.hub_vpngw_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.hub_rg_1 (expand)"
+                "[root] azurerm_public_ip.onprem_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.onprem_rg_1 (expand)"
+                "[root] azurerm_public_ip.onprem_vpngw_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.onprem_rg_1 (expand)"
+                "[root] azurerm_public_ip.spoke_1_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.spoke_1_rg_1 (expand)"
+                "[root] azurerm_public_ip.spoke_2_vm_1_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.spoke_2_rg_1 (expand)"
+                "[root] azurerm_public_ip.spoke_2_vm_2_pub_ip_1 (expand)" -> "[root] azurerm_resource_group.spoke_2_rg_1 (expand)"
+                "[root] azurerm_resource_group.hub_rg_1 (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+                "[root] azurerm_resource_group.onprem_rg_1 (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+                "[root] azurerm_resource_group.spoke_1_rg_1 (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+                "[root] azurerm_resource_group.spoke_2_rg_1 (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"]"
+                "[root] azurerm_subnet.hub_subnet_1 (expand)" -> "[root] azurerm_virtual_network.hub_virt_nw_1 (expand)"
+                "[root] azurerm_subnet.hub_vpngw_subnet_1 (expand)" -> "[root] azurerm_virtual_network.hub_virt_nw_1 (expand)"
+                "[root] azurerm_subnet.onprem_subnet_1 (expand)" -> "[root] azurerm_virtual_network.onprem_virt_nw_1 (expand)"
+                "[root] azurerm_subnet.onprem_vpngw_subnet_1 (expand)" -> "[root] azurerm_virtual_network.onprem_virt_nw_1 (expand)"
+                "[root] azurerm_subnet.spoke_1_subnet_1 (expand)" -> "[root] azurerm_virtual_network.spoke_1_virt_nw_1 (expand)"
+                "[root] azurerm_subnet.spoke_2_subnet_1 (expand)" -> "[root] azurerm_virtual_network.spoke_2_virt_nw_1 (expand)"
+                "[root] azurerm_subnet.spoke_2_subnet_2 (expand)" -> "[root] azurerm_virtual_network.spoke_2_virt_nw_1 (expand)"
+                "[root] azurerm_virtual_machine.hub_vm_1 (expand)" -> "[root] azurerm_network_interface.hub_vm_nic_1 (expand)"
+                "[root] azurerm_virtual_machine.hub_vm_1 (expand)" -> "[root] var.vm_admin_password"
+                "[root] azurerm_virtual_machine.hub_vm_1 (expand)" -> "[root] var.vm_admin_user"
+                "[root] azurerm_virtual_machine.onprem_vm_1 (expand)" -> "[root] azurerm_network_interface.onprem_vm_nic_1 (expand)"
+                "[root] azurerm_virtual_machine.onprem_vm_1 (expand)" -> "[root] var.vm_admin_password"
+                "[root] azurerm_virtual_machine.onprem_vm_1 (expand)" -> "[root] var.vm_admin_user"
+                "[root] azurerm_virtual_machine.spoke_1_vm_1 (expand)" -> "[root] azurerm_network_interface.spoke_1_vm_nic_1 (expand)"
+                "[root] azurerm_virtual_machine.spoke_1_vm_1 (expand)" -> "[root] var.vm_admin_password"
+                "[root] azurerm_virtual_machine.spoke_1_vm_1 (expand)" -> "[root] var.vm_admin_user"
+                "[root] azurerm_virtual_machine.spoke_2_vm_1 (expand)" -> "[root] azurerm_network_interface.spoke_2_vm_1_nic_1 (expand)"
+                "[root] azurerm_virtual_machine.spoke_2_vm_1 (expand)" -> "[root] var.vm_admin_password"
+                "[root] azurerm_virtual_machine.spoke_2_vm_1 (expand)" -> "[root] var.vm_admin_user"
+                "[root] azurerm_virtual_machine.spoke_2_vm_2 (expand)" -> "[root] azurerm_network_interface.spoke_2_vm_2_nic_1 (expand)"
+                "[root] azurerm_virtual_machine.spoke_2_vm_2 (expand)" -> "[root] var.vm_admin_password"
+                "[root] azurerm_virtual_machine.spoke_2_vm_2 (expand)" -> "[root] var.vm_admin_user"
+                "[root] azurerm_virtual_machine_extension.spoke_2_vm_2_extension (expand)" -> "[root] azurerm_virtual_machine.spoke_2_vm_2 (expand)"
+                "[root] azurerm_virtual_network.hub_virt_nw_1 (expand)" -> "[root] azurerm_resource_group.hub_rg_1 (expand)"
+                "[root] azurerm_virtual_network.onprem_virt_nw_1 (expand)" -> "[root] azurerm_resource_group.onprem_rg_1 (expand)"
+                "[root] azurerm_virtual_network.spoke_1_virt_nw_1 (expand)" -> "[root] azurerm_resource_group.spoke_1_rg_1 (expand)"
+                "[root] azurerm_virtual_network.spoke_2_virt_nw_1 (expand)" -> "[root] azurerm_resource_group.spoke_2_rg_1 (expand)"
+                "[root] azurerm_virtual_network_gateway.hub_vpn_gw (expand)" -> "[root] azurerm_public_ip.hub_vpngw_pub_ip_1 (expand)"
+                "[root] azurerm_virtual_network_gateway.hub_vpn_gw (expand)" -> "[root] azurerm_subnet.hub_vpngw_subnet_1 (expand)"
+                "[root] azurerm_virtual_network_gateway.onprem_vpn_gw (expand)" -> "[root] azurerm_public_ip.onprem_vpngw_pub_ip_1 (expand)"
+                "[root] azurerm_virtual_network_gateway.onprem_vpn_gw (expand)" -> "[root] azurerm_subnet.onprem_vpngw_subnet_1 (expand)"
+                "[root] azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection (expand)" -> "[root] azurerm_virtual_network_gateway.hub_vpn_gw (expand)"
+                "[root] azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection (expand)" -> "[root] azurerm_virtual_network_gateway.onprem_vpn_gw (expand)"
+                "[root] azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection (expand)" -> "[root] var.vpn_shared_key"
+                "[root] azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection (expand)" -> "[root] azurerm_virtual_network_gateway.hub_vpn_gw (expand)"
+                "[root] azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection (expand)" -> "[root] azurerm_virtual_network_gateway.onprem_vpn_gw (expand)"
+                "[root] azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection (expand)" -> "[root] var.vpn_shared_key"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_security_group.onprem_nsg_1 (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_machine.hub_vm_1 (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_machine.onprem_vm_1 (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_machine.spoke_1_vm_1 (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_machine.spoke_2_vm_1 (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_machine_extension.spoke_2_vm_2_extension (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection (expand)"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_network_security_group.onprem_nsg_1 (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_machine.hub_vm_1 (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_machine.onprem_vm_1 (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_machine.spoke_1_vm_1 (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_machine.spoke_2_vm_1 (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_machine_extension.spoke_2_vm_2_extension (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_network_gateway_connection.hub2onprem_vpn_connection (expand)"
+                "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)" -> "[root] azurerm_virtual_network_gateway_connection.onprem2hub_vpn_connection (expand)"
+                "[root] root" -> "[root] meta.count-boundary (EachMode fixup)"
+                "[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/azurerm\"] (close)"
+        }
+}
