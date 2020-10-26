@@ -1,3 +1,9 @@
 .terraform/
 TEMP/
 login.secret*
+myplan
+*plan*
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate*
+*.tfstate.backup*
